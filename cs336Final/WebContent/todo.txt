@@ -1,0 +1,8 @@
+put the games count to champion table
+insert new user data / Adding user
+get the queries for top 10 ap/ad
+query for winrate
+making it looks pretty
+    adding can be icons
+winrate .00 
+

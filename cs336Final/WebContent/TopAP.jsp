@@ -29,10 +29,9 @@
 	    	//Get the selected radio button from the HelloWorld.jsp
 		    //String entity = request.getParameter("command");
 	    	//Make a SELECT query from the table specified by the 'command' parameter at the HelloWorld.jsp
-			String str1 = "SELECT * FROM " + " champs";
+			String str = "SELECT * FROM LeagueStat.champs WHERE Type = \"AP\" ORDER BY usersPlay Desc LIMIT 10";
 	    	//Run the query against the database.
-		    ResultSet result1 = stmt.executeQuery(str1);
-
+		    ResultSet result = stmt.executeQuery(str);
 		   
 		    //Make an HTML table to show the results in:
 		    out.print("<table>");
@@ -43,63 +42,65 @@
 	    	   
 	    	   //THIS IS ONE CELL
 		       out.print("<td>");
-	    	   //print out column header
-		       out.print("Champion");
+		       out.print("Rank");
+		       out.print("</td>");
+	    	   
+	    	   //THIS IS ONE CELL
+		       out.print("<td>");
+		       out.print("name");
 		       out.print("</td>");
 		       
+		       //make a column
+		       out.print("<td>");
+		       out.print("Position");   
+		       out.print("</td>");
+		    		   
 		       //THIS IS ONE CELL
 		       out.print("<td>");
-		       out.print("Number of Uses");
+		       out.print("type");
 		       out.print("</td>");
 		    		   
 		       out.print("<td>");
 		       out.print("winRate");
 		       out.print("</td>");
 		       
-		       out.print("<td>");
-		       out.print("Rank");
-		       out.print("</td>");
-		       
 		       out.print("</tr>");
 		    
+		       int count = 1;
 		    //parse out the results
 		    while(result.next())
 		    {
+		    	
+		    	
 		       //make a row
 		       out.print("<tr>");
 		       
+		       out.print("<td>");
+		       out.print(count);
+		       out.print("</td>");
+		       
 		       //THIS IS ONE CELL
 		       out.print("<td>");
-		       //Print out current bar or beer name:
 		       out.print(result.getString("name"));
 		       out.print("</td>");
 		       
 		       //THIS IS ONE CELL
 		       out.print("<td>");
-		       //Print out current bar/beer additional info: Manf or Address
 		    	   out.print(result.getString("position"));
 		       out.print("</td>");
 		       
 		       //THIS IS ONE CELL
 		       out.print("<td>");
-		       //Print out current bar/beer additional info: Manf or Address
 		    	   out.print(result.getString("type"));
 		       out.print("</td>");
 		       
 		       //THIS IS ONE CELL
 		       out.print("<td>");
-		       //Print out current bar/beer additional info: Manf or Address
 		    	   out.print(result.getString("winRate"));
 		       out.print("</td>");
 		       
-		     //THIS IS ONE CELL
-		       out.print("<td>");
-		       //Print out current bar/beer additional info: Manf or Address
-		    	   out.print(result.getString("id"));
-		       out.print("</td>");
-		       
 		       out.print("</tr>");
-		      
+		      count++;
 		    } 
 		    out.print("</table>");
 		    
