@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import="java.io.*,java.util.*,java.sql.*"%>
+     <%@ page import="java.io.*,java.util.*,java.sql.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Champions</title>
+<title>Insert title here</title>
 </head>
 <body>
 <% 
@@ -29,7 +29,7 @@
 	    	//Get the selected radio button from the HelloWorld.jsp
 		    //String entity = request.getParameter("command");
 	    	//Make a SELECT query from the table specified by the 'command' parameter at the HelloWorld.jsp
-			String str = "SELECT * FROM " + " champs";
+			String str = "SELECT * FROM LeagueStat.champs WHERE position = \"ROM\" ORDER BY winRate Desc LIMIT 10";
 	    	//Run the query against the database.
 		    ResultSet result = stmt.executeQuery(str);
 		   
@@ -42,7 +42,11 @@
 	    	   
 	    	   //THIS IS ONE CELL
 		       out.print("<td>");
-	    	   //print out column header
+		       out.print("Rank");
+		       out.print("</td>");
+	    	   
+	    	   //THIS IS ONE CELL
+		       out.print("<td>");
 		       out.print("name");
 		       out.print("</td>");
 		       
@@ -60,17 +64,19 @@
 		       out.print("winRate");
 		       out.print("</td>");
 		       
-		       out.print("<td>");
-		       out.print("id");
-		       out.print("</td>");
-		       
 		       out.print("</tr>");
 		    
 		    //parse out the results
 		    while(result.next())
 		    {
+		    	
+		    	int count = 1;
 		       //make a row
 		       out.print("<tr>");
+		       
+		       out.print("<td>");
+		       out.print(count);
+		       out.print("</td>");
 		       
 		       //THIS IS ONE CELL
 		       out.print("<td>");
@@ -92,13 +98,8 @@
 		    	   out.print(result.getString("winRate"));
 		       out.print("</td>");
 		       
-		     //THIS IS ONE CELL
-		       out.print("<td>");
-		    	   out.print(result.getString("id"));
-		       out.print("</td>");
-		       
 		       out.print("</tr>");
-		      
+		      count++;
 		    } 
 		    out.print("</table>");
 		    
