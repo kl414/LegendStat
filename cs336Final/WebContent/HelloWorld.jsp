@@ -48,8 +48,8 @@
 
 <br>
 <p> Top 10 Best to Use Characters Based on Win Rate
-<form method="get" action="TopWinRate.jsp" enctype=text/plain>
-<button type="submit" value="Best Win Rate Champions" formaction="TopWinRate.jsp" >Best Win Rate Champions</button>  <!-- in this page you will be able to choose the user to see their top champions and ranking -->
+<form method="get" action="TopWinRates.jsp" enctype=text/plain>
+<button type="submit" value="Best Win Rate Champions" formaction="TopWinRates.jsp" >Best Win Rate Champions</button>  <!-- in this page you will be able to choose the user to see their top champions and ranking -->
 </form>
 
 <br>

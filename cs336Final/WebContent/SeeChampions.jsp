@@ -61,6 +61,10 @@
 		       out.print("</td>");
 		       
 		       out.print("<td>");
+		       out.print("UserPlay");
+		       out.print("</td>");
+		       
+		       out.print("<td>");
 		       out.print("id");
 		       out.print("</td>");
 		       
@@ -91,6 +95,10 @@
 		       out.print("<td>");
 		    	   out.print(result.getString("winRate"));
 		       out.print("</td>");
+		       
+		       out.print("<td>");
+	    	   out.print(result.getString("usersPlay"));
+	       out.print("</td>");
 		       
 		     //THIS IS ONE CELL
 		       out.print("<td>");
