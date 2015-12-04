@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title><!-- figure out how to get the information from the link to make the champion name the title -->
+<title>
 Champion Information
 </title>
 <style>
@@ -64,14 +64,14 @@ th {
 
 <ul>
   <li><a href="HelloWorld.jsp">Home</a></li>
-  <li><a href="SeeChampions.jsp">Champion List</a></li>
-  <li><a class="active" href="#championinformation">Users </a></li>
-  <li><a href="#usefulinfo">Useful Information </a></li>
+  <li><a class="active" href="SeeChampions.jsp">Champion List</a></li>
+  <li><a href="SeeUsers.jsp">Users </a></li>
+  <li><a href="stats.jsp">Statistics</a></li>
   
   <ul style="float:right;list-style-type:none;">
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#login">Login</a></li>
+  <li><a href="contact.jsp">Contact</a></li>
+  <li><a href="AboutPage.jsp">About</a></li>
+  <li><a href="login.jsp">Login</a></li>
   </ul>
 </ul>
 

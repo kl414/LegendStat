@@ -134,11 +134,12 @@ th {
 		    
 		    while(result.next())
 		    {
-		       out.print("<tr>");
-		       out.print("<a href=\"championinfo.jsp\"></a>");
+		       
+		       out.print("<tr onclick = \"document.location = 'championinfo.jsp';\">");
 		       out.print("<td align=\"center\">");
 		       out.print(result.getString("name"));
 		       out.print("</td>");
+		      
 		       
 		       out.print("<td align=\"center\">");
 		       out.print(result.getString("position"));
@@ -155,9 +156,8 @@ th {
 		       out.print("<td align=\"center\">");
 	    	   out.print(result.getString("usersPlay"));
 	    	   out.print("</td>");
-		       
 		       out.print("</tr>");
-		      
+		       
 		    } 
 		    out.print("</table>");
 		    
