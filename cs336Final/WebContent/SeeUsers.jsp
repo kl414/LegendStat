@@ -71,7 +71,7 @@ th {
   <ul style="float:right;list-style-type:none;">
   <li><a href="contact.jsp">Contact</a></li>
   <li><a href="AboutPage.jsp">About</a></li>
-  <li><a href="#login">Login</a></li>
+  <li><a href="login.jsp">Login</a></li>
   </ul>
 </ul>
 <center>

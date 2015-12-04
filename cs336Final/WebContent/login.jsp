@@ -4,7 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>About Us</title>
+<title>Login</title>
+
 
 <style>
 ul {
@@ -56,8 +57,8 @@ th {
     color: white;
 }
 </style>
-
 </head>
+
 <body bgcolor="#E6E6FA">
 
 <ul>
@@ -68,20 +69,44 @@ th {
   
   <ul style="float:right;list-style-type:none;">
   <li><a href="contact.jsp">Contact</a></li>
-  <li><a class="active" href="#about">About</a></li>
-  <li><a href="login.jsp">Login</a></li>
+  <li><a href="AboutPage.jsp">About</a></li>
+  <li><a class="active" href="#login">Login</a></li>
   </ul>
 </ul>
-
 <center>
-<p> Wilson Cheung </p>
-<p> Kevin </p>
-<p> cs336 Final Project </p>
 
-<img src="league-of-legends-logo.jpg" alt="Homepage Logo" style="width:304px;height:228px;">
+	<p> Login </p>
+
+	<form method="post" action="LoginSuccess.jsp">
+	<table>
+	<tr>    
+	<td>Username</td><td><input type="text" name="Username"></td>
+	</tr>
+	
+	</table>
+	<br>
+	<input type="submit" value="submit">
+	</form>
+	
+	<br>
+	
+	<p> Sign Up </p>
+	
+	<form method="post" action="signUpDetails.jsp">
+	<table>
+	<tr>    
+	<td>Username</td><td><input type="text" name="Username"></td>
+	</tr>
+	</table>
+	<br>
+	<input type="submit" value="submit">
+	</form>
+	
+	<br>
+
+	<img src="league-of-legends-logo.jpg" alt="Homepage Logo" style="width:304px;height:228px;">
 
 </center>
-
 
 </body>
 </html>

@@ -70,7 +70,7 @@ th {
   <ul style="float:right;list-style-type:none;">
   <li><a href="contact.jsp">Contact</a></li>
   <li><a href="AboutPage.jsp">About</a></li>
-  <li><a href="#login">Login</a></li>
+  <li><a href="login.jsp">Login</a></li>
   </ul>
 </ul>
 <center>
@@ -224,21 +224,21 @@ th {
 	    	   
 	    	   //THIS IS ONE CELL
 		       out.print("<td>");
-		       out.print("name");
+		       out.print("Champion");
 		       out.print("</td>");
 		       
 		       //make a column
 		       out.print("<td>");
-		       out.print("Position");   
+		       out.print("Lane Position");   
 		       out.print("</td>");
 		    		   
 		       //THIS IS ONE CELL
 		       out.print("<td>");
-		       out.print("type");
+		       out.print("Offense Type");
 		       out.print("</td>");
 		    		   
 		       out.print("<td>");
-		       out.print("winRate");
+		       out.print("Win Rate");
 		       out.print("</td>");
 		       
 		       out.print("</tr>");
@@ -328,21 +328,21 @@ th {
 	    	   
 	    	   //THIS IS ONE CELL
 		       out.print("<td>");
-		       out.print("name");
+		       out.print("Champion");
 		       out.print("</td>");
 		       
 		       //make a column
 		       out.print("<td>");
-		       out.print("Position");   
+		       out.print("Lane Position");   
 		       out.print("</td>");
 		    		   
 		       //THIS IS ONE CELL
 		       out.print("<td>");
-		       out.print("type");
+		       out.print("Offense Type");
 		       out.print("</td>");
 		    		   
 		       out.print("<td>");
-		       out.print("winRate");
+		       out.print("Win Rate");
 		       out.print("</td>");
 		       
 		       out.print("</tr>");
@@ -432,21 +432,21 @@ out.print("<br>");
 	    	   
 	    	   //THIS IS ONE CELL
 		       out.print("<td>");
-		       out.print("name");
+		       out.print("Champion");
 		       out.print("</td>");
 		       
 		       //make a column
 		       out.print("<td>");
-		       out.print("Position");   
+		       out.print("Lane Position");   
 		       out.print("</td>");
 		    		   
 		       //THIS IS ONE CELL
 		       out.print("<td>");
-		       out.print("type");
+		       out.print("Offense Type");
 		       out.print("</td>");
 		    		   
 		       out.print("<td>");
-		       out.print("winRate");
+		       out.print("Win Rate");
 		       out.print("</td>");
 		       
 		       out.print("</tr>");
@@ -497,14 +497,6 @@ out.print("<br>");
 	catch (Exception e) {
 	}
 %>
-
-
-
-
-
-
-
-
 
 </center>
 
