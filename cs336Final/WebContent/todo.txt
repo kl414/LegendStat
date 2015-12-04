@@ -5,4 +5,29 @@ query for winrate
 making it looks pretty
     adding can be icons
 winrate .00 
+LAST: FIGURE OUT HOW TO MAKE EACH ROW CLICKABLE AND MAKE EACH CHAMPION/USER A PAGE
 
+
+NOTES FOR USER INPUT?
+
+<br>
+<br>
+<br>
+<br>
+Alternatively, lets type in a bar and a beer and  a price limit.
+
+	<form method="post" action="newBeer.jsp">
+	<table>
+	<tr>    
+	<td>Bar</td><td><input type="text" name="bar"></td>
+	</tr>
+	<tr>
+	<td>Beer</td><td><input type="text" name="beer"></td>
+	</tr>
+	<tr>
+	<td>Price</td><td><input type="text" name="price"></td>
+	</tr>
+	</table>
+	<br>
+	<input type="submit" value="submit">
+	</form>

@@ -8,76 +8,66 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>League Statistics</title>
-</head>
-<body>
+<style>
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
-<!-- Title and Information for User Use -->
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+</style>
+
+
+</head>
+<body bgcolor="#E6E6FA">
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="SeeChampions.jsp">Champion List</a></li>
+  <li><a href="SeeUsers.jsp">Users </a></li>
+  <li><a href="stats.jsp">Statistics</a></li>
+  
+  <ul style="float:right;list-style-type:none;">
+  <li><a href="contact.jsp">Contact</a></li>
+  <li><a href="AboutPage.jsp">About</a></li>
+  <li><a href="#login">Login</a></li>
+  </ul>
+</ul>
 <center>
-<p>Welcome to a site all about League of Legends! 
-<p>Feel free to browse around for all your League of Legend needs!
+<img src="league-of-legends-logo.jpg" alt="Homepage Logo" style="width:304px;height:228px;">
+
+<p><b>Welcome to a site all about League of Legends!</b> </p>
+<p><b>Feel free to browse around for all your League of Legend needs!</b></p>
 
 </center> 
- 		
-<br>
-<!-- Navigation of the site bringing to the various tables and queries -->
 
-<form method="get" action="SeeChampions.jsp" enctype=text/plain>
-<button type="submit" value="See Champions" formaction="SeeChampions.jsp" >See Champions</button>  <!-- in this page you will be able to choose the user to see their top champions and ranking -->
-</form> 		
-<form method="get" action="SeeUsers.jsp" enctype=text/plain>
-<button type="submit" value="See Users" formaction="SeeUsers.jsp" >See Users</button>  <!-- in this page you will be able to choose the user to see their top champions and ranking -->
-</form>  		
-
-<br>
-<p> Top 10 AP Most Popular Characters Based on Usage
-<form method="get" action="TopAP.jsp" enctype=text/plain>
-<button type="submit" value="Top 10 AP Champions" formaction="TopAP.jsp" >Top 10 AP Champions</button>  <!-- in this page you will be able to choose the user to see their top champions and ranking -->
-</form>  
-
-<br>
-<p> Top 10 AD Most Popular Characters Based on Usage
-<form method="get" action="TopAD.jsp" enctype=text/plain>
-<button type="submit" value="Top 10 AD Champions" formaction="TopAD.jsp" >Top 10 AD Champions</button>  <!-- in this page you will be able to choose the user to see their top champions and ranking -->
-</form>
-
-<br>
-<p> Top 10 Most Popular Characters Overall Characters 
-<form method="get" action="Top10.jsp" enctype=text/plain>
-<button type="submit" value="Top10MostUsed" formaction="Top10.jsp" >Top 10 Most Used</button>  <!-- in this page you will be able to choose the user to see their top champions and ranking -->
-</form>
-
-<br>
-<p> Top 10 Best to Use Characters Based on Win Rate
-<form method="get" action="TopWinRates.jsp" enctype=text/plain>
-<button type="submit" value="Best Win Rate Champions" formaction="TopWinRates.jsp" >Best Win Rate Champions</button>  <!-- in this page you will be able to choose the user to see their top champions and ranking -->
-</form>
-
-<br>
-<p> Best Characters to Play Lanes With
-<form method="get" action="BestLanes.jsp" enctype=text/plain>
-<button type="submit" value="Best Lane Characters" formaction="BestLanes.jsp" >Best Lane Characters</button>  <!-- in this page you will be able to choose the user to see their top champions and ranking -->
-</form>
-
-<br>
-<br>
-<br>
-<br>
-Alternatively, lets type in a bar and a beer and  a price limit.
-
-	<form method="post" action="newBeer.jsp">
-	<table>
-	<tr>    
-	<td>Bar</td><td><input type="text" name="bar"></td>
-	</tr>
-	<tr>
-	<td>Beer</td><td><input type="text" name="beer"></td>
-	</tr>
-	<tr>
-	<td>Price</td><td><input type="text" name="price"></td>
-	</tr>
-	</table>
-	<br>
-	<input type="submit" value="submit">
-	</form>
 </body>
 </html>

@@ -36,6 +36,14 @@
 		    //Make an HTML table to show the results in:
 		    out.print("<table>");
 		    
+		       out.print("<tr>");
+		       out.print("<td>");
+		       out.print("Top 10 Most Played Champions");
+
+		       out.print("<td>");
+		       out.print("</tr>");
+
+	    	
 	    	   //make a row
 		       out.print("<tr>");
 	    	   //make a column
@@ -47,21 +55,21 @@
 	    	   
 	    	   //THIS IS ONE CELL
 		       out.print("<td>");
-		       out.print("name");
+		       out.print("Champion");
 		       out.print("</td>");
 		       
 		       //make a column
 		       out.print("<td>");
-		       out.print("Position");   
+		       out.print("Lane Position");   
 		       out.print("</td>");
 		    		   
 		       //THIS IS ONE CELL
 		       out.print("<td>");
-		       out.print("type");
+		       out.print("Offense Type");
 		       out.print("</td>");
 		    		   
 		       out.print("<td>");
-		       out.print("winRate");
+		       out.print("Win Rate");
 		       out.print("</td>");
 		       
 		       out.print("</tr>");

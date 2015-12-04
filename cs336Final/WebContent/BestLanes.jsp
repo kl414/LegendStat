@@ -29,7 +29,7 @@
 	    	//Get the selected radio button from the HelloWorld.jsp
 		    //String entity = request.getParameter("command");
 	    	//Make a SELECT query from the table specified by the 'command' parameter at the HelloWorld.jsp
-			String strtop = "SELECT * FROM LeagueStat.champs WHERE position = + "\"" + "TOP" + "\"" Order By winRate DESC LIMIT 5";
+			String strtop = "SELECT * FROM LeagueStat.champs WHERE position = TOP Order By winRate DESC LIMIT 5";
 			String stradc = "SELECT * FROM LeagueStat.champs WHERE position = \"ADC\"  LIMIT 1";
 			String strsupp = "SELECT * FROM LeagueStat.champs WHERE position = \"SUPPORT\" LIMIT 1";
 			String strmid = "SELECT * FROM LeagueStat.champs WHERE position = \"MID\" LIMIT 1";
@@ -64,7 +64,6 @@
 		       out.print("</td>");
 
 		       out.print("</tr>");
-		       
 			   out.print("<tr>");
 		       out.print("<td>");
 		       out.print(top.getString("name"));
