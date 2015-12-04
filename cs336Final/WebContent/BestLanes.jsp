@@ -29,7 +29,7 @@
 	    	//Get the selected radio button from the HelloWorld.jsp
 		    //String entity = request.getParameter("command");
 	    	//Make a SELECT query from the table specified by the 'command' parameter at the HelloWorld.jsp
-			String strtop = "SELECT * FROM LeagueStat.champs WHERE position = \"TOP\" Order By winRate DESC LIMIT 1";
+			String strtop = "SELECT * FROM LeagueStat.champs WHERE position = + "\"" + "TOP" + "\"" Order By winRate DESC LIMIT 5";
 			String stradc = "SELECT * FROM LeagueStat.champs WHERE position = \"ADC\"  LIMIT 1";
 			String strsupp = "SELECT * FROM LeagueStat.champs WHERE position = \"SUPPORT\" LIMIT 1";
 			String strmid = "SELECT * FROM LeagueStat.champs WHERE position = \"MID\" LIMIT 1";
@@ -45,22 +45,16 @@
 		    //Make an HTML table to show the results in:
 		    out.print("<table>");
 		    
-	    	   //make a row
 		       out.print("<tr>");
-	    	   //make a column
 	    	   
-	    	    //make a column
 		       out.print("<td>");
 		       out.print("Lane");   
 		       out.print("</td>");
 	    	   
-	    	   //THIS IS ONE CELL
 		       out.print("<td>");
-	    	   //print out column header
 		       out.print("name");
 		       out.print("</td>");
 		    		   
-		       //THIS IS ONE CELL
 		       out.print("<td>");
 		       out.print("type");
 		       out.print("</td>");
@@ -70,17 +64,14 @@
 		       out.print("</td>");
 
 		       out.print("</tr>");
-		    
-		    //parse out the results
-		 
-			  
-	out.print("<tr>");
+		       
+			   out.print("<tr>");
 		       out.print("<td>");
-		       out.print(top.getString("position"));
+		       out.print(top.getString("name"));
 		       out.print("</td>");
 		       
 		       out.print("<td>");
-		       out.print(top.getString("name"));
+		       out.print(top.getString("position"));
 		       out.print("</td>");
 		     
 		       out.print("<td>");
@@ -90,9 +81,9 @@
 		       out.print("<td>");
 		       out.print(top.getString("winRate"));
 		       out.print("</td>");
- 	out.print("</tr>");
+ 			   out.print("</tr>");
 		    
-		    out.print("</table>");
+		       out.print("</table>");
 		    
 		    //close the connection.
 		    con.close();
