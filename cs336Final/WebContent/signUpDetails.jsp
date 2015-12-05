@@ -55,7 +55,7 @@ li a:hover:not(.active) {
   <ul style="float:right;list-style-type:none;">
   <li><a href="contact.jsp">Contact</a></li>
   <li><a href="AboutPage.jsp">About</a></li>
-  <li><a class="active" href="#login">Login</a></li>
+  <li><a class="active" href="login.jsp">Login</a></li>
   </ul>
 </ul>
 
@@ -84,8 +84,11 @@ li a:hover:not(.active) {
 	ResultSet result = stmt.executeQuery(str);
 	
 	if(result.next()){
-		out.print("Duplicate username " + username + " exist!" + "<br>");
+		out.print("Duplicate username " + "<b>" + username + "</b>" + " exist!" + "<br>");
+		out.print("<br>");
 		out.print("Please go back and enter a different one");
+		out.print("<br>");
+
 	}else{
 %>
 	<form name = "userInfo" method="post" action="updateDB.jsp">
