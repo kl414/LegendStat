@@ -29,7 +29,7 @@
 	    	//Get the selected radio button from the HelloWorld.jsp
 		    //String entity = request.getParameter("command");
 	    	//Make a SELECT query from the table specified by the 'command' parameter at the HelloWorld.jsp
-			String str = "SELECT * FROM LeagueStat.champs WHERE Type = \"AP\" ORDER BY usersPlay Desc LIMIT 10";
+			String str = "SELECT * FROM LeagueStat.champs WHERE type = \"AP\" ORDER BY usersPlay Desc LIMIT 10";
 	    	//Run the query against the database.
 		    ResultSet result = stmt.executeQuery(str);
 		   

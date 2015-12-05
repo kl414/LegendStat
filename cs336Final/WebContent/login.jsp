@@ -60,7 +60,22 @@ th {
 </head>
 
 <body bgcolor="#E6E6FA">
-
+<script>
+function validateForm1() {
+    var x = document.forms["loginForm"]["Username1"].value;
+    if (x == null || x == "") {
+        alert("Username must be filled out!");
+        return false;
+    }
+}
+function validateForm2() {
+    var x = document.forms["signUpForm"]["Username2"].value;
+    if (x == null || x == "") {
+        alert("Username must be filled out!");
+        return false;
+    }
+}
+</script>
 <ul>
   <li><a href="HelloWorld.jsp">Home</a></li>
   <li><a href="SeeChampions.jsp">Champion List</a></li>
@@ -73,14 +88,15 @@ th {
   <li><a class="active" href="#login">Login</a></li>
   </ul>
 </ul>
+
 <center>
 
 	<p> Login </p>
 
-	<form method="post" action="LoginSuccess.jsp">
+	<form name = "loginForm" method="post" action="LoginSuccess.jsp" onsubmit="return validateForm1()">
 	<table>
 	<tr>    
-	<td>Username</td><td><input type="text" name="Username"></td>
+	<td>Username</td><td><input type="text" name="Username1"></td>
 	</tr>
 	
 	</table>
@@ -92,10 +108,10 @@ th {
 	
 	<p> Sign Up </p>
 	
-	<form method="post" action="signUpDetails.jsp">
+	<form name = "signUpForm" method="post" action="signUpDetails.jsp" onsubmit="return validateForm2()">
 	<table>
 	<tr>    
-	<td>Username</td><td><input type="text" name="Username"></td>
+	<td>Username</td><td><input type="text" name="Username2"></td>
 	</tr>
 	</table>
 	<br>
