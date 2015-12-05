@@ -219,8 +219,7 @@ try{
 	    response.sendRedirect(redirectURL);
 	}
 }catch(Exception e){
-	//out.print("Please enter integer value");
-	out.print(e.getMessage());
+	out.print("Please enter integer value");
 }    
     
 
