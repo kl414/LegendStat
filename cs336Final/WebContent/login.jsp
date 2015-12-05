@@ -104,7 +104,7 @@ th {
 	
 	<br>
 
-	<img src="league-of-legends-logo.jpg" alt="Homepage Logo" style="width:304px;height:228px;">
+<img src="league-of-legends-logo.jpg" alt="Homepage Logo" style="width:704px;height:428px;">
 
 </center>
 

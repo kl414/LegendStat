@@ -43,6 +43,12 @@ li a:hover:not(.active) {
 
 .hoverTable tr:first-child:hover {
     background-color: #E6E6FA;
+    font-weight: normal;
+}
+
+.hoverTable tr:nth-child(2):hover {
+    background-color: #E6E6FA;
+    font-weight: normal;
 }
 
 .hoverTable tr:hover{
@@ -102,7 +108,7 @@ th {
 		    ResultSet top10result = stmt.executeQuery(top10query);
    	
 		    //Make an HTML table to show the results in:
-		    out.print("<table>");
+		    out.print("<table class=\"hoverTable\">");
 		    
 
 		       out.print("<tr>");
@@ -205,7 +211,7 @@ th {
     ResultSet topADresult = stmt.executeQuery(topADquery);
 
    //Make an HTML table to show the results in:
-		    out.print("<table>");
+		    out.print("<table class=\"hoverTable\">");
 		    
 		    out.print("<tr>");
 		       out.print("<th COLSPAN=5 >");
@@ -309,7 +315,7 @@ th {
     ResultSet topAPresult = stmt.executeQuery(topAPquery);
 
    //Make an HTML table to show the results in:
-		    out.print("<table>");
+		    out.print("<table class=\"hoverTable\">");
 		    
 		    out.print("<tr>");
 		       out.print("<th COLSPAN=5 >");
@@ -413,7 +419,7 @@ out.print("<br>");
     ResultSet bestwinresult = stmt.executeQuery(bestwin);
 
    //Make an HTML table to show the results in:
-		    out.print("<table>");
+		    out.print("<table class=\"hoverTable\">");
 		    
 		    out.print("<tr>");
 		       out.print("<th COLSPAN=5 >");
