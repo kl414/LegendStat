@@ -60,11 +60,9 @@ li a:hover:not(.active) {
 </ul>
 
 <center>
-<p> New Info </p>
 <% 
 	String username = request.getParameter("Username2");
 	session.setAttribute("Username",username);
-	session.setAttribute("mode", "signUp");
 	//Create a connection string
 	//String url = "jdbc:mysql://your_VM:3306/your_db";
 	String url = "jdbc:mysql://leaguestat.cfcknphvdfcz.us-west-2.rds.amazonaws.com:3306/LeagueStat";

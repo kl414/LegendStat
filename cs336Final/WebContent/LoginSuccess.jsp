@@ -1,70 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
 <%@ page import="java.io.*,java.util.*,java.sql.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Sign Up</title>
+<title>Login</title>
 </head>
-<style>
-ul {
-    list-style-type: none;
-    margin: 10px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-    border-right:1px solid #bbb;
-}
-
-li:last-child {
-    border-right: none;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #4CAF50;
-}
-
-
-</style>
 <body>
-
-<ul>
-  <li><a href="HelloWorld.jsp">Home</a></li>
-  <li><a class="active" href="SeeChampions.jsp">Champion List</a></li>
-  <li><a href="SeeUsers.jsp">Users </a></li>
-  <li><a href="stats.jsp">Statistics</a></li>
-  
-  <ul style="float:right;list-style-type:none;">
-  <li><a href="contact.jsp">Contact</a></li>
-  <li><a href="AboutPage.jsp">About</a></li>
-  <li><a href="login.jsp">Login</a></li>
-  </ul>
-</ul>
-
 <center>
-<p> New Info </p>
-<% 
-	String username = request.getParameter("Username2");
+<p> Update Info </p>
+<%
+	String username = request.getParameter("Username1");
 	session.setAttribute("Username",username);
-	session.setAttribute("mode", "signUp");
+	session.setAttribute("mode", "login");
+
 	//Create a connection string
 	//String url = "jdbc:mysql://your_VM:3306/your_db";
 	String url = "jdbc:mysql://leaguestat.cfcknphvdfcz.us-west-2.rds.amazonaws.com:3306/LeagueStat";
@@ -83,9 +35,9 @@ li a:hover:not(.active) {
 	//Run the query against the database.
 	ResultSet result = stmt.executeQuery(str);
 	
-	if(result.next()){
-		out.print("Duplicate username " + username + " exist!" + "<br>");
-		out.print("Please go back and enter a different one");
+	if(!result.next()){
+		out.print("username " + username + "does not exist!" + "<br>");
+		out.print("Please go back");
 	}else{
 %>
 	<form name = "userInfo" method="post" action="updateDB.jsp">
@@ -512,8 +464,6 @@ li a:hover:not(.active) {
 <% 
 	}
 %>
-
-	
 </center>
 </body>
 </html>
