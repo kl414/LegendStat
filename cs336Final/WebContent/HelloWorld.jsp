@@ -60,7 +60,7 @@ li a:hover:not(.active) {
   </ul>
 </ul>
 <center>
-<img src="league-of-legends-logo.jpg" alt="Homepage Logo" style="width:304px;height:228px;">
+<img src="league-of-legends-logo.jpg" alt="Homepage Logo" style="width:704px;height:428px;">
 
 <p><b>Welcome to a site all about League of Legends!</b> </p>
 <p><b>Feel free to browse around for all your League of Legend needs!</b></p>

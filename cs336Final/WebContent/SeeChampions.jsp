@@ -135,7 +135,7 @@ th {
 		    while(result.next())
 		    {
 		       
-		       out.print("<tr onclick = \"document.location = 'championinfo.jsp';\">");
+		       out.print("<tr>");
 		       out.print("<td align=\"center\">");
 		       out.print(result.getString("name"));
 		       out.print("</td>");
