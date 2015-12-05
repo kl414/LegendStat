@@ -146,6 +146,10 @@ th {
 		       out.print("Win Rate");
 		       out.print("</td>");
 		       
+		       out.print("<td>");
+		       out.print("Number of User Plays");
+		       out.print("</td>");
+		       
 		       out.print("</tr>");
 		    
 		       int count = 1;
@@ -179,6 +183,10 @@ th {
 		       out.print("<td>");
 		    	   out.print(top10result.getString("winRate"));
 		       out.print("</td>");
+		       
+		       out.print("<td>");
+	    	   out.print(top10result.getString("usersPlay"));
+	      		 out.print("</td>");
 		       
 		       out.print("</tr>");
 		       count++;
@@ -247,6 +255,10 @@ th {
 		       out.print("Win Rate");
 		       out.print("</td>");
 		       
+		       out.print("<td>");
+		       out.print("Number of User Plays");
+		       out.print("</td>");
+		       
 		       out.print("</tr>");
 		    
 		       int count = 1;
@@ -282,6 +294,11 @@ th {
 		       out.print("<td>");
 		    	   out.print(topADresult.getString("winRate"));
 		       out.print("</td>");
+		       
+		       out.print("<td>");
+	    	   out.print(topADresult.getString("usersPlay"));
+	       out.print("</td>");
+	       
 		       
 		       out.print("</tr>");
 		      count++;
@@ -351,6 +368,11 @@ th {
 		       out.print("Win Rate");
 		       out.print("</td>");
 		       
+		       out.print("<td>");
+		       out.print("Number of User Plays");
+		       out.print("</td>");
+		       
+		       
 		       out.print("</tr>");
 		    
 		       int count = 1;
@@ -386,6 +408,10 @@ th {
 		       out.print("<td>");
 		    	   out.print(topAPresult.getString("winRate"));
 		       out.print("</td>");
+		       
+		       out.print("<td>");
+	    	   out.print(topAPresult.getString("usersPlay"));
+	       out.print("</td>");
 		       
 		       out.print("</tr>");
 		      count++;
