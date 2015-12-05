@@ -75,7 +75,7 @@ th {
 
 <center>
 <p> Wilson Cheung </p>
-<p> Kevin </p>
+<p> Hongie Lin </p>
 <p> cs336 Final Project </p>
 
 <img src="league-of-legends-logo.jpg" alt="Homepage Logo" style="width:704px;height:428px;">
