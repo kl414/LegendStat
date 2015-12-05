@@ -44,23 +44,23 @@ li a:hover:not(.active) {
 
 
 </style>
-<body>
+<body bgcolor="#E6E6FA">
 
 <ul>
   <li><a href="HelloWorld.jsp">Home</a></li>
-  <li><a class="active" href="SeeChampions.jsp">Champion List</a></li>
+  <li><a href="SeeChampions.jsp">Champion List</a></li>
   <li><a href="SeeUsers.jsp">Users </a></li>
   <li><a href="stats.jsp">Statistics</a></li>
   
   <ul style="float:right;list-style-type:none;">
   <li><a href="contact.jsp">Contact</a></li>
   <li><a href="AboutPage.jsp">About</a></li>
-  <li><a href="login.jsp">Login</a></li>
+  <li><a class="active" href="#login">Login</a></li>
   </ul>
 </ul>
 
 <center>
-<p> New Info </p>
+<p> New Information </p>
 <% 
 	String username = request.getParameter("Username2");
 	session.setAttribute("Username",username);
@@ -512,6 +512,9 @@ li a:hover:not(.active) {
 <% 
 	}
 %>
+<br>
+
+<img src="league-of-legends-logo.jpg" alt="Homepage Logo" style="width:704px;height:428px;">
 
 	
 </center>

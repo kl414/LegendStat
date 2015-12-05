@@ -60,6 +60,21 @@ th {
 </head>
 
 <body bgcolor="#E6E6FA">
+
+
+<ul>
+  <li><a href="HelloWorld.jsp">Home</a></li>
+  <li><a href="SeeChampions.jsp">Champion List</a></li>
+  <li><a href="SeeUsers.jsp">Users </a></li>
+  <li><a href="stats.jsp">Statistics</a></li>
+  
+  <ul style="float:right;list-style-type:none;">
+  <li><a href="contact.jsp">Contact</a></li>
+  <li><a href="AboutPage.jsp">About</a></li>
+  <li><a class="active" href="login.jsp">Login</a></li>
+  </ul>
+</ul>
+
 <script>
 function validateForm1() {
     var x = document.forms["loginForm"]["Username1"].value;
@@ -76,18 +91,6 @@ function validateForm2() {
     }
 }
 </script>
-<ul>
-  <li><a href="HelloWorld.jsp">Home</a></li>
-  <li><a href="SeeChampions.jsp">Champion List</a></li>
-  <li><a href="SeeUsers.jsp">Users </a></li>
-  <li><a href="stats.jsp">Statistics </a></li>
-  
-  <ul style="float:right;list-style-type:none;">
-  <li><a href="contact.jsp">Contact</a></li>
-  <li><a href="AboutPage.jsp">About</a></li>
-  <li><a class="active" href="#login">Login</a></li>
-  </ul>
-</ul>
 
 <center>
 

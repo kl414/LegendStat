@@ -7,8 +7,59 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Processing</title>
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+
+
 </head>
-<body>
+<body bgcolor="#E6E6FA">
+
+<ul>
+  <li><a href="HelloWorld.jsp">Home</a></li>
+  <li><a href="SeeChampions.jsp">Champion List</a></li>
+  <li><a href="SeeUsers.jsp">Users </a></li>
+  <li><a href="stats.jsp">Statistics </a></li>
+  
+  <ul style="float:right;list-style-type:none;">
+  <li><a href="contact.jsp">Contact</a></li>
+  <li><a href="AboutPage.jsp">About</a></li>
+  <li><a class="active" href="login.jsp">Login</a></li>
+  </ul>
+</ul>
+<center>
 <% 
 try{
 	String rank = request.getParameter("rank");
@@ -174,5 +225,8 @@ try{
     
 
 %>
+<br>
+<img src="league-of-legends-logo.jpg" alt="Homepage Logo" style="width:704px;height:428px;">
+</center>
 </body>
 </html>
